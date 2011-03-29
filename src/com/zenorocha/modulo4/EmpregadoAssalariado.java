@@ -1,17 +1,6 @@
 package com.zenorocha.modulo4;
 
-/*import sun.font.EAttribute;*/
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author LABCCET
- */
-public class EmpregadoAssalariado {
+public class EmpregadoAssalariado extends Empregado {
     private String nome;
     private float salarioBase;
     private float descontoPercent;
@@ -46,18 +35,16 @@ public class EmpregadoAssalariado {
         this.descontoPercent = descontoPercent;
     }
     
-    public void aReceberLiquido() {
+    public void pagamentoLiquido() {
         float salario = this.salarioBase * (1 - this.descontoPercent);
         System.out.println(salario);
     }
+    
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         System.out.println("teste");
 
         EmpregadoAssalariado emp = new EmpregadoAssalariado("Joao Roberto", 1000, 0.3f);
         emp.aReceberLiquido();
-        
-    }
-
-    //salário base * (1 – desconto)
+    }*/
 }

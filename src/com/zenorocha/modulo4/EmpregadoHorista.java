@@ -1,15 +1,6 @@
 package com.zenorocha.modulo4;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author LABCCET
- */
-public class EmpregadoHorista {
+public class EmpregadoHorista extends Empregado {
     private String nome;
     private float valorHora;
     private int numHoras;
@@ -45,16 +36,16 @@ public class EmpregadoHorista {
         this.numHoras = numHoras;
     }
 
-    public void aReceberLiquido() {
+    public void pagamentoLiquido() {
         float salario = (this.getValorHora() * this.getNumHoras()) - this.taxaFixa;
         System.out.println(salario);
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         System.out.println("teste");
 
         EmpregadoHorista emp = new EmpregadoHorista("Joao Roberto", 10, 30);
         emp.aReceberLiquido();
         
-    }
+    }*/
 }
