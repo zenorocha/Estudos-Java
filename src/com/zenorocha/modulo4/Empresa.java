@@ -38,6 +38,58 @@
 
 package com.zenorocha.modulo4;
 
-public interface INome {
-	public String getNome();
+public class Empresa implements IElementoFolha {
+    private String nome;
+    private float valorBruto;
+    private float taxaIR;
+    private float taxaISS;
+    private String regime;
+
+    public Empresa(float valorBruto, float taxaIR, float taxaISS) {
+        this.valorBruto = valorBruto;
+        this.taxaIR = taxaIR;
+        this.taxaISS = taxaISS;
+        this.regime = "Pessoa Juridica";
+    }
+
+    public String getNome() {
+        return this.nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getRegime() {
+        return this.regime;
+    }
+
+    public float getPagamentoLiquido() {
+        float valor = this.getValorBruto() * (1 - this.getTaxaIR() - this.getTaxaISS());
+        return valor;
+    }
+    
+    public float getValorBruto() {
+        return valorBruto;
+    }
+
+    public void setValorBruto(float valorBruto) {
+        this.valorBruto = valorBruto;
+    }
+
+    public float getTaxaIR() {
+        return taxaIR;
+    }
+
+    public void setTaxaIR(float taxaIR) {
+        this.taxaIR = taxaIR;
+    }
+
+    public float getTaxaISS() {
+        return taxaISS;
+    }
+
+    public void setTaxaISS(float taxaISS) {
+        this.taxaISS = taxaISS;
+    }
 }
