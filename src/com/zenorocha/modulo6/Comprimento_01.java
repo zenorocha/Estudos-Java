@@ -54,7 +54,7 @@
  * 
  */
 
-package com.zenorocha.modulo3;
+package com.zenorocha.modulo6;
 
 public class Comprimento_01 {
 

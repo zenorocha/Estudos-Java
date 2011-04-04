@@ -1,6 +1,6 @@
 /*
- * Módulo 1
- * Projeto e Construção de Sistemas
+ * Modulo 1
+ * Projeto e Construcao de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -10,7 +10,7 @@
  * 
  * Programa 2.5
  * 
- *	Escreva um programa que imprima os números primos entre um limite inferior e um limite superior.
+ *	Escreva um programa que imprima os numeros primos entre um limite inferior e um limite superior.
  * 
  */
 

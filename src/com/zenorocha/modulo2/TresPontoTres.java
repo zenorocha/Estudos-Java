@@ -1,6 +1,6 @@
 /*
- * Módulo 2
- * Projeto e Construção de Sistemas
+ * Modulo 2
+ * Projeto e Construcao de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
