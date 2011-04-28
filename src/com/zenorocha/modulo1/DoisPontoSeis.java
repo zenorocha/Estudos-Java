@@ -1,6 +1,6 @@
 /*
- * Modulo 1
- * Projeto e Construcao de Sistemas
+ * MÃ³dulo 1
+ * Projeto e ConstruÃ§Ã£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -10,9 +10,9 @@
  * 
  * Programa 2.6
  * 
- *	Escreva um programa que sorteie dez números inteiros e imprima os números sorteados, o
- *	total de números pares sorteados, o total de números ímpares sorteados, o maior número
- *	sorteado e o menor número sorteado.
+ *	Escreva um programa que sorteie dez nÃºmeros inteiros e imprima os nÃºmeros sorteados, o
+ *	total de nÃºmeros pares sorteados, o total de nÃºmeros Ã­mpares sorteados, o maior nÃºmero
+ *	sorteado e o menor nÃºmero sorteado.
  * 
  */
 
@@ -42,8 +42,8 @@ public class DoisPontoSeis {
 				impares++;
 		}
 		
-		System.out.println("Quantidade de números pares: " + pares);
-		System.out.println("Quantidade de números ímpares: " + impares);
+		System.out.println("Quantidade de nï¿½meros pares: " + pares);
+		System.out.println("Quantidade de nï¿½meros ï¿½mpares: " + impares);
 		
 		for (int j = 0; j < vetor.length; j++) {
 			if (vetor[j] > maior) {
@@ -55,8 +55,8 @@ public class DoisPontoSeis {
 			}
 		}
 		
-		System.out.println("Maior número sorteado: " + maior);
-		System.out.println("Menor número sorteado: " + menor);
+		System.out.println("Maior nï¿½mero sorteado: " + maior);
+		System.out.println("Menor nï¿½mero sorteado: " + menor);
 		
 	}
 }

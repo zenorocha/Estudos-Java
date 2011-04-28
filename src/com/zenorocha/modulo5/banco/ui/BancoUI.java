@@ -1,6 +1,6 @@
 /*
- * Modulo 5
- * Projeto e Construcao de Sistemas
+ * M√≥dulo 5
+ * Projeto e Constru√ß√£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -8,39 +8,36 @@
  * 
  * --------------------------------------------------------------------------------------------
  * 
- * Passo 2: Construir a classe BancoUI (interface com o usu·rio)
- * 
- * 	FaÁa uma classe BancoUI que corresponder· a uma interface com usu·rio rudimentar via 
- * 	console que dever· se comportar da seguinte forma:
- * 
- * 	A classe BancoUI dever· instanciar o objeto Conta que ser· manipulado durante a
- * 	execuÁ„o do programa. Antes de instanciar o objeto Conta, porÈm, BancoUI dever·
- * 	perguntar para o usu·rio o n˙mero e o saldo inicial que ser„o passados para o construtor do
- * 	objeto Conta.
- * 
- * 	A operaÁ„o do programa ser· baseada em um menu textual em console (n„o se preocupem
- * 	com coisas do tipo limpar a tela, e etc), com as seguintes opÁıes:
- * 
- * 		1 ñ creditar na conta
- * 		2 ñ debitar da conta
- * 		3 ñ consultar saldo
- * 		4 ñ finalizar o programa
- * 
- * 	Se o usu·rio entrar a opÁ„o 1, o programa dever· perguntar o valor a ser creditado. O
- * 	usu·rio entrar· o valor e a classe BancoUI chamar· diretamente a operaÁ„o creditar com o
- * 	valor passado. Caso haja uma exceÁ„o, o programa dever· exibir a mensagem de erro
- * 	correspondente. Caso contr·rio o programa dever· apresentar a mensagem ìOperaÁ„o bem sucedidaî.
+ * Passo 1: Construir as classes Conta e BancoAppException
  * 	
- * 	Se o usu·rio entrar a opÁ„o 2, o programa dever· perguntar o valor a ser creditado. O
- * 	usu·rio entrar· o valor e a classe BancoUI chamar· diretamente a operaÁ„o creditar com o
- * 	valor passado. Caso haja uma exceÁ„o, o programa dever· exibir a mensagem de erro
- * 	correspondente. Caso contr·rio, o programa dever· apresentar a mensagem ìOperaÁ„o bem sucedidaî.
- * 	
- * 	Se o usu·rio entrar a opÁ„o 3, o programa dever· apresentar o valor atual do saldo da conta.
+ * 	Classe Conta:
+ * 		Atributos:
+ * 			‚Ä¢ numero (string)
+ * 			‚Ä¢ saldo (double)
  * 
- * 	ApÛs executar qualquer destas trÍs opÁıes, o programa dever· apresentar novamente o menu de opÁıes.
+ * 		Opera√ß√µes:
+ * 			‚Ä¢ Construtor com os par√¢metros numero da conta e saldo inicial.
+ * 			‚Ä¢ Opera√ß√£o: debitar (par√¢metro: valor) -> acumula valor no saldo da conta.
+ * 			‚Ä¢ Opera√ß√£o: creditar (par√¢metro: valor) -> debita valor do saldo da conta.
+ * 
+ * 	Considere as seguintes regras:
+ * 
+ * 	a) debitar:
+ * 		‚Ä¢ valor a debitar tem que ser um n√∫mero positivo maior que zero.
+ * 		‚Ä¢ conta tem que ter saldo suficiente para o d√©bito, isto √©, a conta tem que ter
+ * 		um valor maior ou igual a zero ap√≥s o d√©bito.
+ * 		‚Ä¢ Existe um limite para o valor a debitar que √© de 2.000,00. O limite √© por
+ * 		opera√ß√£o de d√©bito (suponha que n√£o exista limite di√°rio).
  * 	
- * 	ATEN«√O: Defina a classe BancoUI no pacote banco.ui.
+ * 	b) creditar:
+ * 		‚Ä¢ valor a creditar tem que ser um n√∫mero positivo maior que zero.
+ * 
+ * 	Em caso de falha nessas regras, a implementa√ß√£o da opera√ß√£o (debitar ou creditar) deve
+ * 	arremessar uma exce√ß√£o do tipo BancoAppException (que deve ser criada por voc√™,
+ * 	estendendo a classe Exception j√° existente no Java) com uma mensagem de erro
+ * 	correspondente ao problema.
+ * 
+ * 	ATEN√á√ÉO: Defina a classe Conta no pacote banco.negocio
  * 
  */
 

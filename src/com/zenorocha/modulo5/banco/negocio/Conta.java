@@ -1,6 +1,6 @@
 /*
- * Modulo 5
- * Projeto e Construcao de Sistemas
+ * MÃ³dulo 5
+ * Projeto e ConstruÃ§Ã£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -12,32 +12,32 @@
  * 	
  * 	Classe Conta:
  * 		Atributos:
- * 			• numero (string)
- * 			• saldo (double)
+ * 			â€¢ numero (string)
+ * 			â€¢ saldo (double)
  * 
- * 		Operações:
- * 			• Construtor com os parâmetros numero da conta e saldo inicial.
- * 			• Operação: debitar (parâmetro: valor) -> acumula valor no saldo da conta.
- * 			• Operação: creditar (parâmetro: valor) -> debita valor do saldo da conta.
+ * 		OperaÃ§Ãµes:
+ * 			â€¢ Construtor com os parÃ¢metros numero da conta e saldo inicial.
+ * 			â€¢ OperaÃ§Ã£o: debitar (parÃ¢metro: valor) -> acumula valor no saldo da conta.
+ * 			â€¢ OperaÃ§Ã£o: creditar (parÃ¢metro: valor) -> debita valor do saldo da conta.
  * 
  * 	Considere as seguintes regras:
  * 
  * 	a) debitar:
- * 		• valor a debitar tem que ser um número positivo maior que zero.
- * 		• conta tem que ter saldo suficiente para o débito, isto é, a conta tem que ter
- * 		um valor maior ou igual a zero após o débito.
- * 		• Existe um limite para o valor a debitar que é de 2.000,00. O limite é por
- * 		operação de débito (suponha que não exista limite diário).
+ * 		â€¢ valor a debitar tem que ser um nÃºmero positivo maior que zero.
+ * 		â€¢ conta tem que ter saldo suficiente para o dÃ©bito, isto Ã©, a conta tem que ter
+ * 		um valor maior ou igual a zero apÃ³s o dÃ©bito.
+ * 		â€¢ Existe um limite para o valor a debitar que Ã© de 2.000,00. O limite Ã© por
+ * 		operaÃ§Ã£o de dÃ©bito (suponha que nÃ£o exista limite diÃ¡rio).
  * 	
  * 	b) creditar:
- * 		• valor a creditar tem que ser um número positivo maior que zero.
+ * 		â€¢ valor a creditar tem que ser um nÃºmero positivo maior que zero.
  * 
- * 	Em caso de falha nessas regras, a implementação da operação (debitar ou creditar) deve
- * 	arremessar uma exceção do tipo BancoAppException (que deve ser criada por você,
- * 	estendendo a classe Exception já existente no Java) com uma mensagem de erro
+ * 	Em caso de falha nessas regras, a implementaÃ§Ã£o da operaÃ§Ã£o (debitar ou creditar) deve
+ * 	arremessar uma exceÃ§Ã£o do tipo BancoAppException (que deve ser criada por vocÃª,
+ * 	estendendo a classe Exception jÃ¡ existente no Java) com uma mensagem de erro
  * 	correspondente ao problema.
  * 
- * 	ATENÇÃO: Defina a classe Conta no pacote banco.negocio
+ * 	ATENÃ‡ÃƒO: Defina a classe Conta no pacote banco.negocio
  * 
  */
 

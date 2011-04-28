@@ -1,6 +1,6 @@
 /*
- * Modulo 1
- * Projeto e Construcao de Sistemas
+ * Módulo 1
+ * Projeto e Construção de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -10,7 +10,7 @@
  * 
  * Programa 2.4
  * 
- *	Fa�a uma vers�o do programa 2.2 com o comando do while.
+ *	Faça uma versão do programa 2.2 com o comando do while.
  * 
  */
 

@@ -1,6 +1,6 @@
 /*
- * Modulo 4
- * Projeto e Construcao de Sistemas
+ * M√≥dulo 4
+ * Projeto e Constru√ß√£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -8,27 +8,29 @@
  * 
  * --------------------------------------------------------------------------------------------
  * 
- * Programa Folha de Pagamento ñ Pessoas e Empresas
+ * Programa Recursos Rodovi√°rios
  * 
- * 	Este È um exercÌcio de reestruturaÁ„o de um fragmento de uma aplicaÁ„o, que embora
- * 	tenha sido feita em Java, est· longe de ser aderente ao paradigma de orientaÁ„o a objetos.
+ * 	Este √© um exerc√≠cio de reestrutura√ß√£o de um fragmento de uma aplica√ß√£o, que embora
+ * 	tenha sido feita em Java, est√° longe de ser aderente ao paradigma de orienta√ß√£o a objetos.
  * 	Note por exemplo que os atributos foram definidos com o modificador public e a
- * 	implementaÁ„o horrÌvel da operaÁ„o getOcupacao da classe LinhaFerroviaria, com v·rias
- * 	expressıes de downcasting. Sua tarefa È reestruturar a implementaÁ„o destas classes de
- * 	forma a torn·-la orientada a objetos, a partir da utilizaÁ„o efetiva de recursos como information hiding e polimorfismo.
+ * 	implementa√ß√£o horr√≠vel da opera√ß√£o getOcupacao da classe LinhaFerroviaria, com v√°rias
+ * 	express√µes de downcasting. Sua tarefa √© reestruturar a implementa√ß√£o destas classes de
+ * 	forma a torn√°-la orientada a objetos, a partir da utiliza√ß√£o efetiva de recursos como
+ * 	information hiding e polimorfismo.
  * 
- * 	Apenas para explicar o significado das classes, uma Linha Ferrovi·ria em uma estaÁ„o de
+ * 	Apenas para explicar o significado das classes, uma Linha Ferrovi√°ria em uma esta√ß√£o de
  * 	manobra pode ter diversos recursos nela estacionados. Os recursos podem ser locomotivas
- * 	ou vagıes isolados ou um trem (formado por locomotivas e vagıes). O espaÁo ocupado por
- * 	cada recurso depende do tipo do recurso. No caso de uma locomotiva, o espaÁo È dado pelo
- * 	seu comprimento. No caso de um vag„o, o espaÁo È dado pela soma do comprimento dos
- * 	engates mais o comprimento entre testeiras (este ˙ltimo corresponde ao local onde a carga
- * 	efetivamente È acondicionada). Finalmente, no caso de um trem, o comprimento È dado
- * 	pela soma do comprimento dos recursos que o compıem (vagıes e locomotivas, calculados conforme descrito acima).
+ * 	ou vag√µes isolados ou um trem (formado por locomotivas e vag√µes). O espa√ßo ocupado por
+ * 	cada recurso depende do tipo do recurso. No caso de uma locomotiva, o espa√ßo √© dado pelo
+ * 	seu comprimento. No caso de um vag√£o, o espa√ßo √© dado pela soma do comprimento dos
+ * 	engates mais o comprimento entre testeiras (este √∫ltimo corresponde ao local onde a carga
+ * 	efetivamente √© acondicionada). Finalmente, no caso de um trem, o comprimento √© dado
+ * 	pela soma do comprimento dos recursos que o comp√µem (vag√µes e locomotivas, calculados
+ * 	conforme descrito acima).
  * 
- * 	Neste exercÌcio, vocÍ nem precisa se preocupar muito com o significado da aplicaÁ„o. 
- * 	A idÈia È que vocÍ aprenda a reconhecer padrıes de estruturaÁ„o ruim de uma aplicaÁ„o
- * 	orientada a objetos (conhecidos tambÈm como anti-padrıes) e sugerir uma soluÁ„o mais adequada.
+ * 	Neste exerc√≠cio, voc√™ nem precisa se preocupar muito com o significado da aplica√ß√£o. 
+ * 	A id√©ia √© que voc√™ aprenda a reconhecer padr√µes de estrutura√ß√£o ruim de uma aplica√ß√£o
+ * 	orientada a objetos (conhecidos tamb√©m como anti-padr√µes) e sugerir uma solu√ß√£o mais adequada.
  * 
  */
 

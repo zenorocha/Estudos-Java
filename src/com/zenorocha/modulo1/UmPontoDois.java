@@ -1,6 +1,6 @@
 /*
- * Modulo 1
- * Projeto e Construcao de Sistemas
+ * M√≥dulo 1
+ * Projeto e Constru√ß√£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -10,8 +10,8 @@
  * 
  * Programa 1.2
  * 
- *	Sejam duas vari·veis inteiras (a e b), pede-se armazenar a soma, subtraÁ„o, divis„o e a
- *	mÈdia dos dois n˙meros. Considere os seguintes casos (valores iniciais para as vari·veis a, b):
+ *	Sejam duas vari√°veis inteiras (a e b), pede-se armazenar a soma, subtra√ß√£o, divis√£o e a
+ *	m√©dia dos dois n√∫meros. Considere os seguintes casos (valores iniciais para as vari√°veis a, b):
  *		
  *		a) 9 e 7
  *		b) 10 e 5

@@ -1,6 +1,6 @@
 /*
- * Módulo 3
- * Projeto e Construção de Sistemas
+ * MÃ³dulo 3
+ * Projeto e ConstruÃ§Ã£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -10,13 +10,13 @@
  * 
  * Programa Empregado:
  * 	
- * 	Defina uma classe Empregado com os atributos nome, salário base, taxa percentual de
+ * 	Defina uma classe Empregado com os atributos nome, salÃ¡rio base, taxa percentual de
  * 	desconto e altura (comprimento), contendo:
  * 		
  * 		a) construtor default com taxa percentual de desconto = 10%.
- * 		b) construtor com nome, altura, salário e taxa percentual.
- * 		c) métodos get e set para os atributos.
- * 		d) método pagamentoLiquido sendo o resultado do cálculo: salário descontado da taxa percentual.
+ * 		b) construtor com nome, altura, salÃ¡rio e taxa percentual.
+ * 		c) mÃ©todos get e set para os atributos.
+ * 		d) mÃ©todo pagamentoLiquido sendo o resultado do cÃ¡lculo: salÃ¡rio descontado da taxa percentual.
  * 
  */
 
@@ -76,8 +76,8 @@ public class Empregado {
 	}
 	
 	public static void main(String[] args) {
-		Empregado empregado = new Empregado("José", 1.75f, 1000f, 0.10f);
-		System.out.println("O pagamento líquido desse funcionário é: " + empregado.pagamentoLiquido());
+		Empregado empregado = new Empregado("Josï¿½", 1.75f, 1000f, 0.10f);
+		System.out.println("O pagamento lï¿½quido desse funcionï¿½rio ï¿½: " + empregado.pagamentoLiquido());
 	}
 	
 }

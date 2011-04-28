@@ -1,6 +1,6 @@
 /*
- * Modulo 3
- * Projeto e Construcao de Sistemas
+ * MÃ³dulo 3
+ * Projeto e ConstruÃ§Ã£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -10,9 +10,9 @@
  * 
  * Programa Comprimento_02:
  * 
- * 	Crie uma nova versão para o programa Comprimento_01, modificando a representação
- * 	interna para apenas um atributo correspondente ao valor total em milímetros. Nesta nova
- * 	versão, você deverá usar a mesma classe TesteComprimento do programa Comprimento_01.
+ * 	Crie uma nova versÃ£o para o programa Comprimento_01, modificando a representaÃ§Ã£o
+ * 	interna para apenas um atributo correspondente ao valor total em milÃ­metros. Nesta nova
+ * 	versÃ£o, vocÃª deverÃ¡ usar a mesma classe TesteComprimento do programa Comprimento_01.
  * 
  */
 
@@ -42,7 +42,7 @@ public class Comprimento_02 {
 	}
 	
 	public void Print() {
-		System.out.println(this.mm + " milímetros");
+		System.out.println(this.mm + " milï¿½metros");
 	}
 	
 	public Comprimento_02 Somar(Comprimento_02 x, Comprimento_02 y) {

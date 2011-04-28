@@ -1,6 +1,6 @@
 /*
- * Modulo 1
- * Projeto e Construcao de Sistemas
+ * MÃ³dulo 1
+ * Projeto e ConstruÃ§Ã£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -10,8 +10,8 @@
  * 
  * Programa 2.1
  * 
- *	Escreva um programa que dado um número inteiro, entrado via argumento do programa,
- *	determine se ele é par ou ímpar.
+ *	Escreva um programa que dado um nÃºmero inteiro, entrado via argumento do programa,
+ *	determine se ele Ã© par ou Ã­mpar.
  * 
  */
 
@@ -36,9 +36,9 @@ public class DoisPontoUm {
 	
 	public void defineParOuImpar() {
 		if ((this.valor % 2) == 0)
-			System.out.println("Esse valor é par");
+			System.out.println("Esse valor ï¿½ par");
 		else
-			System.out.println("Esse valor é ímpar");
+			System.out.println("Esse valor ï¿½ ï¿½mpar");
 	}
 
 	public static void main(String[] args) {

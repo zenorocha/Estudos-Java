@@ -1,6 +1,6 @@
 /*
- * Modulo 3
- * Projeto e Construcao de Sistemas
+ * MÃ³dulo 3
+ * Projeto e ConstruÃ§Ã£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -8,9 +8,9 @@
  * 
  * --------------------------------------------------------------------------------------------
  * 
- * Auxilia na execução dos programas Comprimento_01 e Comprimento_02.
+ * Auxilia na execuÃ§Ã£o dos programas Comprimento_01 e Comprimento_02.
  * 
- * Para mais informações, checar cabeçalho dos programas citados acima.
+ * Para mais informaÃ§Ãµes, checar cabeÃ§alho dos programas citados acima.
  * 
  */
 
@@ -67,10 +67,10 @@ public class TesteComprimento {
 	// d)
 	public void testeValorMilimetros() {
 		Comprimento_01 a = new Comprimento_01(1, 2, 3);
-		System.out.println("Valor Milímetros: " + a.getMm());
+		System.out.println("Valor Milï¿½metros: " + a.getMm());
 		
 		Comprimento_02 b = new Comprimento_02(1, 2, 3);
-		System.out.println("Valor Milímetros: " + b.getMm());
+		System.out.println("Valor Milï¿½metros: " + b.getMm());
 	}
 	
 	

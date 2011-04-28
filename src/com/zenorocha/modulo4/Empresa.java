@@ -1,6 +1,6 @@
 /*
- * Modulo 4
- * Projeto e Construcao de Sistemas
+ * M√≥dulo 4
+ * Projeto e Constru√ß√£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -8,31 +8,33 @@
  * 
  * --------------------------------------------------------------------------------------------
  * 
- * Programa Folha de Pagamento ñ Pessoas e Empresas
+ * Programa Folha de Pagamento - Pessoa F√≠sica
  * 
- * 	Gere uma nova vers„o do programa anterior, considerando o seguinte design: As classes
- * 	Empregado* implementam uma interface IElementoFolha. A interface IElementoFolha
- * 	estende duas interfaces: IPagamento e INome.
- * 	A interface IPagamento possui a seguinte operaÁ„o:getPagamentoLiquido e getRegime.
- * 		
- * 		ï A operaÁ„o getPagamentoLiquido retorna o pagamento lÌquido conforme as fÛrmulas
- * 		de c·lculo definidas anteriormente.
- * 		ï A operaÁ„o getTipo retorna o tipo do elemento para impress„o na folha (Horista, Assalariado, Bonificado).
+ * 	Define uma hierarquia de classes de regime de empregado (EmpregoEmpregadoHorista,
+ * 	EmpregadoAssalariado e EmpregadoBonificado), onde:
  * 
- * 	A interface INome possui a operaÁ„o getNome.
- * 	Modifique tambÈm a classe FolhaPagamento de forma que o array n„o seja mais da
- * 	superclasse Empregado, mas sim um array de IElementoFolha, ou seja, de objetos que implementem esta interface.
- * 	Uma vez que a nova vers„o do programa esteja funcionando, agora com interfaces, faÁa a seguinte extens„o:
- * 	Crie uma classe Empresa que tambÈm implementar· a interface IElementoFolha, com
- * 	nome, um valor bruto, uma taxa de IR e uma taxa de ISS como descontos.
- * 	
- * 	O valor lÌquido de uma empresa È dado pela seguinte fÛrmula: Valor Bruto * (1 ñ taxaIR ñ taxaISS).
- * 	A implementaÁ„o da operaÁ„o getRegime de empresa dever· retornar o string ìPessoa JurÌdicaî.
+ * 		a) Todo empregado Horista tem nome, valor hora e numero de horas trabalhadas e uma taxa
+ * 		   fixa de 100 reais que √© subtra√≠da do seu valor bruto.
+ * 		b) Todo empregado Assalariado tem nome, sal√°rio base e um desconto percentual aplicado ao seu sal√°rio base.
+ * 		c) Todo empregado Bonificado tem nome, sal√°rio base, um desconto percentual aplicado ao
+ * 		   seu sal√°rio base e um b√¥nus percentual acrescido ao valor l√≠quido.
+ * 		   
+ * 	Todo empregado tem um valor l√≠quido a receber que √© dado pelas seguintes f√≥rmulas:
  * 
- * 	Modifique a classe FolhaPagamento de forma a imprimir uma relaÁ„o de pagamentos a
- * 	serem efetuados, considerando horistas, assalariados, bonificados e empresas. Para tal,
- * 	inicialize o vetor de elementos do tipo IElementoFolha definido em FolhaPagamento para
- * 	que tenha 3 elementos de cada tipo, ou seja, 3 horistas, 3 assalariados, 3 bonificados e 3 empresas.
+ * 		‚Ä¢ Horista: (valor hora * numero de horas trabalhadas) ‚Äì 100
+ * 		‚Ä¢ Assalariado: sal√°rio base * (1 ‚Äì desconto)
+ * 		‚Ä¢ Bonificado: (sal√°rio base * (1 ‚Äì desconto)) * (1 + b√¥nus)
+ * 
+ * 	Desta forma, desconto e b√¥nus s√£o valores reais entre 0 e 1, e.g., 10% = 0.1.
+ * 	Defina a taxa fixa de desconto do Horista como uma constante.
+ * 	Para cada classe, defina um construtor que receba como par√¢metros todas as informa√ß√µes que ela possua.
+ * 
+ * 	Uma vez que as classes tenham sido criadas e que as f√≥rmulas de c√°lculo estejam
+ * 	funcionando, implemente uma classe FolhaPagamento da seguinte forma:
+ * 
+ * 		‚Ä¢ Defina um √∫nico array de empregados com 9 empregados, sendo 3 de cada tipo (Horista, Assalariado, Bonificado).
+ * 		‚Ä¢ Crie uma opera√ß√£o que imprima no console a folha de pagamento. De cada empregado
+ * 		  imprima o nome, regime (Horista, Assalariado, Bonificado) e o respectivo pagamento l√≠quido a receber.
  * 
  */
 

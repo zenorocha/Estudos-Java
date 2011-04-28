@@ -1,6 +1,6 @@
 /*
- * Modulo 2
- * Projeto e Construcao de Sistemas
+ * MÃ³dulo 2
+ * Projeto e ConstruÃ§Ã£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -11,8 +11,8 @@
  * Programa 3.3
  * 
  *	Dado um array de strings com 20 nomes (com nome e sobrenome) de pessoas, escreva um
- *	programa que faça 10 sorteios, sendo 4 pessoas sorteadas em cada sorteio, e imprima a
- *	relação completa das pessoas (em ordem alfabética) e a respectiva quantidade de vezes que
+ *	programa que faÃ§a 10 sorteios, sendo 4 pessoas sorteadas em cada sorteio, e imprima a
+ *	relaÃ§Ã£o completa das pessoas (em ordem alfabÃ©tica) e a respectiva quantidade de vezes que
  *	cada um foi sorteado.
  * 
  */
@@ -25,7 +25,7 @@ public class TresPontoTres {
 
 	private int numeroDeSorteios = 10;
 	private int numeroDeSorteados = 4;
-	private String arrayNomes[] = {"Paulo Henrique", "William José", "Maria Nascimento", "Carlos Eduardo", "Roberto Martins", "Sean Parker", "Mark Zuckenberg", "Joshua Davis", "Francisco Azevedo", "Fernando Torres", "Antonio Conceição", "Zeno Rocha", "Sergio Puntar", "Juliana Torroni", "Mariana Keller", "Bruno Silveira", "Victor dos Santos", "Karina Gomes", "Jorge Ben", "Ney Matogrosso"};
+	private String arrayNomes[] = {"Paulo Henrique", "William Josï¿½", "Maria Nascimento", "Carlos Eduardo", "Roberto Martins", "Sean Parker", "Mark Zuckenberg", "Joshua Davis", "Francisco Azevedo", "Fernando Torres", "Antonio Conceiï¿½ï¿½o", "Zeno Rocha", "Sergio Puntar", "Juliana Torroni", "Mariana Keller", "Bruno Silveira", "Victor dos Santos", "Karina Gomes", "Jorge Ben", "Ney Matogrosso"};
 	private String vetorSorteados[] = new String[40];
 	
 	public TresPontoTres() {
@@ -38,7 +38,7 @@ public class TresPontoTres {
 		
 		int k = 0;
 		
-		System.out.println("-- Início do sorteio.\n");
+		System.out.println("-- Inï¿½cio do sorteio.\n");
 		
 		for (int i = 0; i < numeroDeSorteios; i++) {
 			

@@ -1,6 +1,6 @@
 /*
- * Modulo 1
- * Projeto e Construcao de Sistemas
+ * MÃ³dulo 1
+ * Projeto e ConstruÃ§Ã£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -10,12 +10,12 @@
  * 
  * Programa 1.3
  * 
- * Faça um programa que dado um valor de raio definido em uma variável (valor igual a 60), calcule e mostre o resultado no console das seguintes informações:
+ * FaÃ§a um programa que dado um valor de raio definido em uma variÃ¡vel (valor igual a 60), calcule e mostre o resultado no console das seguintes informaÃ§Ãµes:
  * 		
- * 		a) o diâmetro
- * 		b) a circunferência: 2 * pi * r
- * 		c) a área: pi * r2
- * 		d) maior valor entre a circunferência e o número de dias de um ano.
+ * 		a) o diÃ¢metro
+ * 		b) a circunferÃªncia: 2 * pi * r
+ * 		c) a Ã¡rea: pi * r2
+ * 		d) maior valor entre a circunferÃªncia e o nÃºmero de dias de um ano.
  * 
  */
 
@@ -60,9 +60,9 @@ public class UmPontoTres {
 	
 	public void comparaAno (int raio, int diasNoAno) {
 		if (Circunferencia(raio) > diasNoAno)
-			System.out.println("A circunferencia é maior que o número de dias no ar.");
+			System.out.println("A circunferencia ï¿½ maior que o nï¿½mero de dias no ar.");
 		else
-			System.out.println("O número de dias do ano é maior que o valor da circunferencia.");
+			System.out.println("O nï¿½mero de dias do ano ï¿½ maior que o valor da circunferencia.");
 	}
 	
 	public void Print() {

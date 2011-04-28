@@ -1,6 +1,6 @@
 /*
- * Modulo 1
- * Projeto e Construcao de Sistemas
+ * M√≥dulo 1
+ * Projeto e Constru√ß√£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -10,9 +10,9 @@
  * 
  * Programa 1.5
  * 
- *	Suponha que os ganhos de Jo„o somem em um ano 87562.34, e que ele tenha que pagar
- *	35% de imposto. Escreva um programa que imprima a seguinte informaÁ„o:
- *	O imposto a pagar È de <x> reais e <y> centavos.
+ *	Suponha que os ganhos de Jo√£o somem em um ano 87562.34, e que ele tenha que pagar
+ *	35% de imposto. Escreva um programa que imprima a seguinte informa√ß√£o:
+ *	O imposto a pagar √© de <x> reais e <y> centavos.
  * 
  */
 
@@ -54,7 +54,7 @@ public class UmPontoCinco {
 		centavos = aux.substring(aux.indexOf(".") + 1);
 		centavos = centavos.substring(0, 2);
 		
-		System.out.println("O imposto a pagar È de " + reais + " reais e " + centavos + " centavos.");	
+		System.out.println("O imposto a pagar ÔøΩ de " + reais + " reais e " + centavos + " centavos.");	
 	}
 	
 	public static void main(String[] args) {

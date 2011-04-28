@@ -1,21 +1,20 @@
 /*
- * Modulo 1
- * Projeto e Construcao de Sistemas
+ * MÃ³dulo 1
+ * Projeto e ConstruÃ§Ã£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
  * Em 14/03/2011
  * 
- * 
  * --------------------------------------------------------------------------------------------
  * 
  * Programa 1.1:
  * 
- * 	Sejam três variáveis inteiras (a,b,c), pede-se armazenar a multiplicação destes três valores
- * 	em uma quarta variável (resultado), definindo cada uma das quatro variáveis com o tipo
- * 	inteiro de menor tamanho possível (em bytes) para cada cenário. Imprima o resultado da
- * 	quarta variável. Considere os seguintes casos (valores iniciais para as variáveis a, b, c):
- * 		
+ * 	Sejam trÃªs variÃ¡veis inteiras (a,b,c), pede-se armazenar a multiplicaÃ§Ã£o destes trÃªs valores
+ * 	em uma quarta variÃ¡vel (resultado), definindo cada uma das quatro variÃ¡veis com o tipo
+ * 	inteiro de menor tamanho possÃ­vel (em bytes) para cada cenÃ¡rio. Imprima o resultado da
+ * 	quarta variÃ¡vel. Considere os seguintes casos (valores iniciais para as variÃ¡veis a, b, c):
+ * 
  * 		a) 10, 2, 5
  * 		b) 15, 20, 10
  * 		c) 12, 200, 4
@@ -23,8 +22,8 @@
  * 		e) 90000, 100, 4000
  * 		f) 90000, 100, 40000
  * 
- * 	Você pode fazer um programa para cada caso ou definir conjuntos de 4 variáveis distintas
- * 	para cada caso em um único programa.
+ * 	VocÃª pode fazer um programa para cada caso ou definir conjuntos de 4 variÃ¡veis distintas
+ * 	para cada caso em um Ãºnico programa.
  * 
  */
 

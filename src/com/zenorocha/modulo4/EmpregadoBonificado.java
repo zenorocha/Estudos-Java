@@ -1,6 +1,6 @@
 /*
- * Modulo 4
- * Projeto e Construcao de Sistemas
+ * M√≥dulo 4
+ * Projeto e Constru√ß√£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -8,32 +8,33 @@
  * 
  * --------------------------------------------------------------------------------------------
  * 
- * Programa Folha de Pagamento ñ Pessoa FÌsica
+ * Programa Folha de Pagamento - Pessoa F√≠sica
  * 
  * 	Define uma hierarquia de classes de regime de empregado (EmpregoEmpregadoHorista,
  * 	EmpregadoAssalariado e EmpregadoBonificado), onde:
- * 		
+ * 
  * 		a) Todo empregado Horista tem nome, valor hora e numero de horas trabalhadas e uma taxa
- * 		fixa de 100 reais que È subtraÌda do seu valor bruto.
- * 		b) Todo empregado Assalariado tem nome, sal·rio base e um desconto percentual aplicado ao seu sal·rio base.
- * 		c) Todo empregado Bonificado tem nome, sal·rio base, um desconto percentual aplicado ao
- * 		seu sal·rio base e um bÙnus percentual acrescido ao valor lÌquido.
+ * 		   fixa de 100 reais que √© subtra√≠da do seu valor bruto.
+ * 		b) Todo empregado Assalariado tem nome, sal√°rio base e um desconto percentual aplicado ao seu sal√°rio base.
+ * 		c) Todo empregado Bonificado tem nome, sal√°rio base, um desconto percentual aplicado ao
+ * 		   seu sal√°rio base e um b√¥nus percentual acrescido ao valor l√≠quido.
+ * 		   
+ * 	Todo empregado tem um valor l√≠quido a receber que √© dado pelas seguintes f√≥rmulas:
  * 
- * 	Todo empregado tem um valor lÌquido a receber que È dado pelas seguintes fÛrmulas:
+ * 		‚Ä¢ Horista: (valor hora * numero de horas trabalhadas) ‚Äì 100
+ * 		‚Ä¢ Assalariado: sal√°rio base * (1 ‚Äì desconto)
+ * 		‚Ä¢ Bonificado: (sal√°rio base * (1 ‚Äì desconto)) * (1 + b√¥nus)
  * 
- * 		ï Horista: (valor hora * numero de horas trabalhadas) ñ 100
- * 		ï Assalariado: sal·rio base * (1 ñ desconto)
- * 		ï Bonificado: (sal·rio base * (1 ñ desconto)) * (1 + bÙnus)
- * 
- * 	Desta forma, desconto e bÙnus s„o valores reais entre 0 e 1, e.g., 10% = 0.1.
+ * 	Desta forma, desconto e b√¥nus s√£o valores reais entre 0 e 1, e.g., 10% = 0.1.
  * 	Defina a taxa fixa de desconto do Horista como uma constante.
- * 	Para cada classe, defina um construtor que receba como par‚metros todas as informaÁıes que ela possua.
- * 	Uma vez que as classes tenham sido criadas e que as fÛrmulas de c·lculo estejam
+ * 	Para cada classe, defina um construtor que receba como par√¢metros todas as informa√ß√µes que ela possua.
+ * 
+ * 	Uma vez que as classes tenham sido criadas e que as f√≥rmulas de c√°lculo estejam
  * 	funcionando, implemente uma classe FolhaPagamento da seguinte forma:
  * 
- * 		ï Defina um ˙nico array de empregados com 9 empregados, sendo 3 de cada tipo (Horista, Assalariado, Bonificado).
- * 		ï Crie uma operaÁ„o que imprima no console a folha de pagamento. De cada empregado 
- * 		imprima o nome, regime (Horista, Assalariado, Bonificado) e o respectivo pagamento lÌquido a receber.
+ * 		‚Ä¢ Defina um √∫nico array de empregados com 9 empregados, sendo 3 de cada tipo (Horista, Assalariado, Bonificado).
+ * 		‚Ä¢ Crie uma opera√ß√£o que imprima no console a folha de pagamento. De cada empregado
+ * 		  imprima o nome, regime (Horista, Assalariado, Bonificado) e o respectivo pagamento l√≠quido a receber.
  * 
  */
 

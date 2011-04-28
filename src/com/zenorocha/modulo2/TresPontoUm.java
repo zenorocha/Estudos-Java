@@ -1,6 +1,6 @@
 /*
- * Modulo 2
- * Projeto e Construcao de Sistemas
+ * Módulo 2
+ * Projeto e Construção de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -10,8 +10,8 @@
  * 
  * Programa 3.1
  * 
- *	Escreva um programa que dado um valor num�rico (armazenado em uma vari�vel inteira),
- *	imprima cada um dos seus d�gitos por extenso da esquerda para a direita e vice-versa.
+ *	Escreva um programa que dado um valor numérico (armazenado em uma variável inteira),
+ *	imprima cada um dos seus dígitos por extenso da esquerda para a direita e vice-versa.
  *	Ex: 4571:
  *	Resultado:
  *	quatro cinco sete um

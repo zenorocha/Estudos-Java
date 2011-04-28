@@ -1,6 +1,6 @@
 /*
- * Modulo 5
- * Projeto e Construcao de Sistemas
+ * M√≥dulo 5
+ * Projeto e Constru√ß√£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -10,10 +10,10 @@
  * 
  * Passo 3: Construir a classe BancoApp (classe com main do programa)
  * 
- * 	Crie uma terceira classe BancoApp que conter· apenas a operaÁ„o main e a instanciaÁ„o e
- * 	execuÁ„o de BancoUI.
+ * 	Crie uma terceira classe BancoApp que conter√° apenas a opera√ß√£o main e a instancia√ß√£o e
+ * 	execu√ß√£o de BancoUI.
  * 
- * 	ATEN«√O: Defina a classe BancoApp no pacote banco.app.
+ * 	ATEN√á√ÉO: Defina a classe BancoApp no pacote banco.app.
  * 
  */
 

@@ -1,6 +1,6 @@
 /*
- * Modulo 4
- * Projeto e Construcao de Sistemas
+ * M√≥dulo 4
+ * Projeto e Constru√ß√£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -8,28 +8,28 @@
  * 
  * --------------------------------------------------------------------------------------------
  * 
- * Programa Folha de Pagamento ñ Pessoas e Empresas
+ * Programa Folha de Pagamento - Pessoas e Empresas
  * 
- * 	Gere uma nova vers„o do programa anterior, considerando o seguinte design: As classes
+ * 	Gere uma nova vers√£o do programa anterior, considerando o seguinte design: As classes
  * 	Empregado* implementam uma interface IElementoFolha. A interface IElementoFolha
  * 	estende duas interfaces: IPagamento e INome.
- * 	A interface IPagamento possui a seguinte operaÁ„o:getPagamentoLiquido e getRegime.
+ * 	A interface IPagamento possui a seguinte opera√ß√£o:getPagamentoLiquido e getRegime.
  * 		
- * 		ï A operaÁ„o getPagamentoLiquido retorna o pagamento lÌquido conforme as fÛrmulas
- * 		de c·lculo definidas anteriormente.
- * 		ï A operaÁ„o getTipo retorna o tipo do elemento para impress„o na folha (Horista, Assalariado, Bonificado).
+ * 		‚Ä¢ A opera√ß√£o getPagamentoLiquido retorna o pagamento l√≠quido conforme as f√≥rmulas
+ * 		de c√°lculo definidas anteriormente.
+ * 		‚Ä¢ A opera√ß√£o getTipo retorna o tipo do elemento para impress√£o na folha (Horista, Assalariado, Bonificado).
  * 
- * 	A interface INome possui a operaÁ„o getNome.
- * 	Modifique tambÈm a classe FolhaPagamento de forma que o array n„o seja mais da
+ * 	A interface INome possui a opera√ß√£o getNome.
+ * 	Modifique tamb√©m a classe FolhaPagamento de forma que o array n√£o seja mais da
  * 	superclasse Empregado, mas sim um array de IElementoFolha, ou seja, de objetos que implementem esta interface.
- * 	Uma vez que a nova vers„o do programa esteja funcionando, agora com interfaces, faÁa a seguinte extens„o:
- * 	Crie uma classe Empresa que tambÈm implementar· a interface IElementoFolha, com
+ * 	Uma vez que a nova vers√£o do programa esteja funcionando, agora com interfaces, fa√ßa a seguinte extens√£o:
+ * 	Crie uma classe Empresa que tamb√©m implementar√° a interface IElementoFolha, com
  * 	nome, um valor bruto, uma taxa de IR e uma taxa de ISS como descontos.
  * 	
- * 	O valor lÌquido de uma empresa È dado pela seguinte fÛrmula: Valor Bruto * (1 ñ taxaIR ñ taxaISS).
- * 	A implementaÁ„o da operaÁ„o getRegime de empresa dever· retornar o string ìPessoa JurÌdicaî.
+ * 	O valor l√≠quido de uma empresa √© dado pela seguinte f√≥rmula: Valor Bruto * (1 - taxaIR - taxaISS).
+ * 	A implementa√ß√£o da opera√ß√£o getRegime de empresa dever√° retornar o string "Pessoa Jur√≠dica".
  * 
- * 	Modifique a classe FolhaPagamento de forma a imprimir uma relaÁ„o de pagamentos a
+ * 	Modifique a classe FolhaPagamento de forma a imprimir uma rela√ß√£o de pagamentos a
  * 	serem efetuados, considerando horistas, assalariados, bonificados e empresas. Para tal,
  * 	inicialize o vetor de elementos do tipo IElementoFolha definido em FolhaPagamento para
  * 	que tenha 3 elementos de cada tipo, ou seja, 3 horistas, 3 assalariados, 3 bonificados e 3 empresas.

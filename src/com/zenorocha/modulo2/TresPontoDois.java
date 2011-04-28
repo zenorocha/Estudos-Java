@@ -1,6 +1,6 @@
 /*
- * Modulo 2
- * Projeto e Construcao de Sistemas
+ * M√≥dulo 2
+ * Projeto e Constru√ß√£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -10,9 +10,9 @@
  * 
  * Programa 3.2
  * 
- *	Escreva um programa que determine se um n˙mero È ou n„o um palÌndromo (as leituras da
- *	esquerda para a direita e vice-versa s„o iguais).
- *	Exemplos de PalÌndromo: 12321, 55555, 45554, 11611, 123321
+ *	Escreva um programa que determine se um n√∫mero √© ou n√£o um pal√≠ndromo (as leituras da
+ *	esquerda para a direita e vice-versa s√£o iguais).
+ *	Exemplos de Pal√≠ndromo: 12321, 55555, 45554, 11611, 123321
  * 
  */
 
@@ -41,14 +41,14 @@ public class TresPontoDois {
 		
 		while (i < this.entrada.length()) {
 			if (this.entrada.charAt(i) != this.entrada.charAt(this.entrada.length() - i - 1)) {
-				System.out.println("N„o È PalÌndromo");
+				System.out.println("NÔøΩo ÔøΩ PalÔøΩndromo");
 				System.exit(0);
 			}
 			
 			i++;
 		}
 		
-		System.out.println("… um PalÌndromo");
+		System.out.println("ÔøΩ um PalÔøΩndromo");
 	}
 	
 	public static void main(String[] args) {

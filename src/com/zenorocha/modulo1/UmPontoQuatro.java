@@ -1,18 +1,18 @@
 /*
- * Modulo 1
- * Projeto e Construcao de Sistemas
+ * M√≥dulo 1
+ * Projeto e Constru√ß√£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
- * Em 17/03/2011
+ * Em 14/03/2011
  * 
  * --------------------------------------------------------------------------------------------
  * 
  * Programa 1.4
  * 
- *	Dado o n˙mero 1234.5678, escreva um programa que armazene em uma vari·vel inteira
- *	(short) a parte inteira (1234) e em uma outra vari·vel inteira o valor decimal (5678).
- *	Imprima as duas vari·veis inteiras resultantes da seguinte forma:
+ *	Dado o n√∫mero 1234.5678, escreva um programa que armazene em uma vari√°vel inteira
+ *	(short) a parte inteira (1234) e em uma outra vari√°vel inteira o valor decimal (5678).
+ *	Imprima as duas vari√°veis inteiras resultantes da seguinte forma:
  *	Parte Inteira: 1234 e Parte Flutuante: 5678
  * 
  */

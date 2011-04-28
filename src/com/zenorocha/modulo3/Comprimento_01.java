@@ -1,6 +1,6 @@
 /*
- * Modulo 3
- * Projeto e Construcao de Sistemas
+ * MÃ³dulo 3
+ * Projeto e ConstruÃ§Ã£o de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -12,38 +12,36 @@
  * 
  * 	Defina uma classe Comprimento com a qual possamos:
  * 
- * 		a) Criar um objeto Comprimento passando três valores (correspondentes a metros, centímetros e milímetros).
- * 		b) Criar um objeto Comprimento passando um valor em milímetros.
- * 		c) Criar um objeto Comprimento passando um valor em centímetros e um valor em milímetros.
- * 		d) Obter uma string com o comprimento em metros, centímetros e milímetros. (Formato do string gerado: “x metros, y centímetros e z milímetros”).
- * 		e) Obter o valor total do comprimento em milímetros (retorna um valor inteiro).
+ * 		a) Criar um objeto Comprimento passando trÃªs valores (correspondentes a metros, centÃ­metros e milÃ­metros).
+ * 		b) Criar um objeto Comprimento passando um valor em milÃ­metros.
+ * 		c) Criar um objeto Comprimento passando um valor em centÃ­metros e um valor em milÃ­metros.
+ * 		d) Obter uma string com o comprimento em metros, centÃ­metros e milÃ­metros.
+ * 		   (Formato do string gerado: â€œx metros, y centÃ­metros e z milÃ­metrosâ€).
+ * 		e) Obter o valor total do comprimento em milÃ­metros (retorna um valor inteiro).
  * 		f) Obter o valor total do comprimento em metros (retorna um valor ponto flutuante).
- * 		g) Somar dois comprimentos gerando um novo objeto comprimento que é a soma dos dois => chamada será Comprimento.somar(a,b)
- * 		h) Subtrair dois comprimentos, gerando um novo objeto comprimento que é a subtração de a por b => chamada será Comprimento.subtrair(a,b)
- * 		i) Multiplicar o comprimento por um valor inteiro (resultado será o objeto comprimento atualizado) => chamada será x.multiplicar(i);
- * 		j) Dividir o comprimento por um valor inteiro => idem à multiplicação.
- * 
- * 	Armazene as informações de um comprimento em três atributos inteiros distintos
- * 	(metros, centímetros, milímetros).
- * 
- * 	Crie um programa para usar a classe Comprimento. Por exemplo, defina uma classe
- * 	TesteComprimento que vai ter uma operação main e algumas operações de teste. A
- * 	operação main apenas chamará as operações de teste em seqüência.
+ * 		g) Somar dois comprimentos gerando um novo objeto comprimento que Ã© a soma dos dois => chamada serÃ¡ Comprimento.somar(a,b)
+ * 		h) Subtrair dois comprimentos, gerando um novo objeto comprimento que Ã© a
+ * 		   subtraÃ§Ã£o de a por b => chamada serÃ¡ Comprimento.subtrair(a,b)
+ * 		i) Multiplicar o comprimento por um valor inteiro (resultado serÃ¡ o objeto
+ * 		   comprimento atualizado) => chamada serÃ¡ x.multiplicar(i);
+ * 		j) Dividir o comprimento por um valor inteiro => idem Ã  multiplicaÃ§Ã£o.
+ * 		   Armazene as informaÃ§Ãµes de um comprimento em trÃªs atributos inteiros distintos (metros, centÃ­metros, milÃ­metros).
+ * 		   Crie um programa para usar a classe Comprimento. Por exemplo, defina uma classe
+ * 		   TesteComprimento que vai ter uma operaÃ§Ã£o main e algumas operaÃ§Ãµes de teste. A
+ * 		   operaÃ§Ã£o main apenas chamarÃ¡ as operaÃ§Ãµes de teste em seqÃ¼Ãªncia.
  * 
  * 	Exemplos:
- * 		
- * 		a) testeConstrutorMCM:
- * 			criar um objeto com 5 metros, 10 centímetros e 2 milímetros e imprimir seu valor
- * 			string através de uma chamada à operação obter string (item d da classe Comprimento).
- * 			Você pode experimentar criar outros objetos Comprimento com outros valores para
- * 			metros, centímetros e milímetros para se certificar que o programa está funcionando em outras situações.
  * 
+ * 		a) testeConstrutorMCM: 
+ * 		   criar um objeto com 5 metros, 10 centÃ­metros e 2 milÃ­metros e imprimir seu valor
+ * 		   string atravÃ©s de uma chamada Ã  operaÃ§Ã£o obter string (item d da classe Comprimento).
+ * 		   VocÃª pode experimentar criar outros objetos Comprimento com outros valores para
+ * 		   metros, centÃ­metros e milÃ­metros para se certificar que o programa estÃ¡ funcionando em outras situaÃ§Ãµes.
  * 		b) testeContrutorM:
- * 			criar um objeto com 5102 milímetros e imprimir seu valor string através de uma
- * 			chamada à operação obter string (item d da classe Comprimento).
- * 			Você pode experimentar criar outros objetos Comprimento com outros valores para
- * 			milímetros para se certificar que o programa está funcionando em outras situações.
- * 
+ * 		   criar um objeto com 5102 milÃ­metros e imprimir seu valor string atravÃ©s de uma
+ * 		   chamada Ã  operaÃ§Ã£o obter string (item d da classe Comprimento).
+ * 		   VocÃª pode experimentar criar outros objetos Comprimento com outros valores para
+ * 		   milÃ­metros para se certificar que o programa estÃ¡ funcionando em outras situaÃ§Ãµes.
  * 		c) testeConstrutorCM:
  * 		d) testeValorMilimetros:
  * 		e) testeValorMetros:
@@ -59,8 +57,8 @@ package com.zenorocha.modulo3;
 public class Comprimento_01 {
 
 	private int m; // metros
-	private int cm; // centímetros
-	private int mm; // milímetros
+	private int cm; // centï¿½metros
+	private int mm; // milï¿½metros
 	
 	// default
 	public Comprimento_01() {
@@ -87,7 +85,7 @@ public class Comprimento_01 {
 	
 	// d)
 	public void Print() {
-		System.out.println(this.m + " metros, " + this.cm + " centímetros e " + this.mm + " milímetros");
+		System.out.println(this.m + " metros, " + this.cm + " centï¿½metros e " + this.mm + " milï¿½metros");
 	}
 	
 	// g)

@@ -1,6 +1,6 @@
 /*
- * Modulo 1
- * Projeto e Construcao de Sistemas
+ * Módulo 1
+ * Projeto e Construção de Sistemas
  * Professor: Alexandre Correa
  * 
  * Implementado por Zeno Rocha
@@ -10,10 +10,10 @@
  * 
  * Programa 2.2
  * 
- *	Escreva um programa que dado um intervalo de n�meros inteiros definidos por limInferior	
- *	e limSuperior, imprima o quadrado e o cubo de cada um desses n�meros. Se o
+ *	Escreva um programa que dado um intervalo de números inteiros definidos por limInferior	
+ *	e limSuperior, imprima o quadrado e o cubo de cada um desses números. Se o
  *	limiteSuperior for maior que 100 ou se o limiteSuperior for menor que limiteInferior uma
- *	mensagem de erro deve ser exibida. Fa�a o programa com o comando for. Os valores para
+ *	mensagem de erro deve ser exibida. Faça o programa com o comando for. Os valores para
  *	limInferior e limSuperior devem ser entrados via argumentos do programa.
  * 
  */
