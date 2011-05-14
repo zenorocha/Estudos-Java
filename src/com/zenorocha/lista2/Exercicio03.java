@@ -45,13 +45,15 @@ public class Exercicio03 {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Entre com o valor do seu salário ao longo do ano: ");
+        System.out.println("Entre com a base mensal do seu salário ao longo do ano: ");
         resultadoA = scanner.nextBigDecimal();
         resultadoB = resultadoA.intValue();
 
         System.out.println("\n" + resultadoA);
 
-        if ()
+        if (resultadoA.doubleValue() <= 1499.15) {
+        	resultadoA. = resultadoA.doubleValue() - 112.43;
+        }
 
     }
 }
