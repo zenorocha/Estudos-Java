@@ -1,6 +1,5 @@
 package com.zenorocha.lista5.ex1;
 
-import com.zenorocha.lista5.ex1.Produto;
 
 public class ProdutoDAOMemory implements ProdutoDAO {
 
