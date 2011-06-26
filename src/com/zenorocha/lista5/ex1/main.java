@@ -47,6 +47,19 @@ public class main {
 //            } catch (SQLException ex) {
 //                Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
 //            }
+                
+                int i =0;
+                for(i=0;i<=ProdutoDAOMemory.TOTAL+2;i++){
+                    Produto p2 = new Produto(Integer.toString(i+1), "nome", 10*i);
+                    e.salvarProdutoC(p2, dao);
+                }
+            try {
+               
+                System.out.println((dao.recuperar("1")).getCodigo());
+            } catch (DAOException ex) {
+                System.out.println(ex.getMessage());
+            }
+                
         
     }
 }

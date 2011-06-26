@@ -39,7 +39,7 @@ public class Exemplo {
             dao.armazenar(p);
                 
             }catch(DAOException e){        
-                System.out.println("erro ao tentar armazenar o produto");
+                System.out.println("erro ao tentar armazenar o produto:"+p.getCodigo());
             }                    
             
 	}
