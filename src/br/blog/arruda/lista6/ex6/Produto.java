@@ -15,6 +15,10 @@ public class Produto implements Serializable{
     private int codigo;
     private double preco;
 
+    public Produto() {
+    }
+
+    
     public Produto(String nome, int codigo, double preco) {
         this.nome = nome;
         this.codigo = codigo;
