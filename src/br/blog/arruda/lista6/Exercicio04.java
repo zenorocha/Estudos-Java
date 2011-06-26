@@ -1,8 +1,8 @@
 package br.blog.arruda.lista6;
 
-import com.sun.imageio.plugins.common.I18N;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -15,12 +15,9 @@ public class Exercicio04 {
             listInt.add(scanner.nextInt());
         }
         
-        FileOutputStream fileoutputstream = new FileOutputStream("foo");
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("foo"));
 
-        for (Integer i : listInt) {
-            fileoutputstream.write(i);
-        }
-
-        fileoutputstream.close();
+        oos.writeObject(listInt);
+        oos.close();
     }
 }

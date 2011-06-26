@@ -2,25 +2,31 @@ package br.blog.arruda.lista6;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Exercicio05 {
 
     public static void main(String[] args) throws IOException {
-        FileInputStream fileinputstream = new FileInputStream("foo");
-
-        int numberBytes = fileinputstream.available();
-        byte bytearray[] = new byte[numberBytes];
-
-        fileinputstream.read(bytearray);
-
-        double media = 0.0;
-        for (int i = 0; i < numberBytes; i++) {
-            media += (int)bytearray[i];
-            System.out.println(bytearray[i]);
+        ObjectInputStream ois = new ObjectInputStream( new FileInputStream("foo"));
+        
+        try {
+            ArrayList<Integer> listInt = (ArrayList<Integer>) ois.readObject();
+            ois.close();
+            double media = 0.0;
+            for(Integer integer : listInt){
+                media += integer;
+                System.out.println(integer);
+            }
+            media /=listInt.size();
+            System.out.println(media);
+        } catch (ClassNotFoundException ex) {
         }
-        media /= numberBytes;
-        System.out.println(media);
+        
+        ois.close();
 
-        fileinputstream.close();
     }
 }
