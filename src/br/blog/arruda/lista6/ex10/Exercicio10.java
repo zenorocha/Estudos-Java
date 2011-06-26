@@ -2,12 +2,10 @@ package br.blog.arruda.lista6.ex10;
 
 import br.blog.arruda.lista6.ex10.DAO.ProdutoDAOSerBinaria;
 import br.blog.arruda.lista6.ex10.DAO.ProdutoDAOXML;
-import br.blog.arruda.lista6.ex10.DAO.ProdutoDAOXML;
 import br.blog.arruda.lista6.ex6.*;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Exercicio10 {
 
@@ -20,13 +18,11 @@ public class Exercicio10 {
 
         Scanner scanner = new Scanner(System.in);
         Class c = null;
-        ProdutoDAOXML pDAOXml = new ProdutoDAOXML();
-        ProdutoDAOSerBinaria pDAOBin = new ProdutoDAOSerBinaria();
 
         System.out.println("Escolha qual DAO deseja usar: ");
-        System.out.println(pDAOXml.getClass());
-        System.out.println(pDAOBin.getClass());
-        
+        System.out.println(ProdutoDAOXML.class);
+        System.out.println(ProdutoDAOSerBinaria.class);
+
         try {
             c = Class.forName(scanner.nextLine());
         } catch (ClassNotFoundException ex) {
@@ -34,16 +30,22 @@ public class Exercicio10 {
             return;
         }
 
-        if (c.isInstance(pDAOBin)) {
-            System.out.println(pDAOBin.armazena(listaProdutos));
 
-        } else if (c.isInstance(pDAOXml)) {
-            System.out.println(pDAOXml.armazena(listaProdutos));
 
+        Method meth = null;
+        try {
+            meth = c.getMethod("armazena", listaProdutos.getClass());
+        } catch (NoSuchMethodException ex) {
+            System.out.println("a");
+            
+        } catch (SecurityException ex) {
         }
+        try {
 
-
-
+            Object invoke = meth.invoke(c.newInstance(), listaProdutos);
+            System.out.println((boolean) invoke);
+        } catch (Throwable ex) {
+        } 
 
     }
 }
