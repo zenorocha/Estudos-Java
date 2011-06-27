@@ -52,8 +52,24 @@ public class BancoUI {
 	
 	public BancoUI() {
 		
-	}
-	
+            }
+
+        public double lerDouble() throws  BancoAppException{
+            
+	    Scanner scanner = new Scanner(System.in);
+            Double ret = null;
+            
+            String valorEntrada = scanner.nextLine();
+            try{
+               ret = Double.parseDouble(valorEntrada);
+                
+            }catch(NumberFormatException ne){
+                throw new BancoAppException("Numero invalido");
+            }
+
+            return ret;
+        }
+
 	public void start() {
 		Scanner scanner = new Scanner(System.in);
 		
@@ -75,12 +91,19 @@ public class BancoUI {
 			
 			int escolha = scanner.nextInt();
 			
+                        Double entrada=null;
 			switch (escolha) {
 			case 1:
 				System.out.println("Entre com o valor a ser creditado: ");
-				
+				try{
+                                    entrada = lerDouble();
+                                }catch(BancoAppException be){
+                                    System.out.println(be.getMessage());
+				    break;                                    
+                                } 
+                                
 				try {
-					conta.creditar(scanner.nextDouble());
+					conta.creditar(entrada);
 					System.out.println("\nOperacao bem sucedida.\n");
 				}
 				catch (BancoAppException e) {
@@ -91,9 +114,16 @@ public class BancoUI {
 			case 2:
 				System.out.println("Entre com o valor a ser debitado: ");
 				
+				try{
+                                    entrada = lerDouble();
+                                }catch(BancoAppException be){
+                                    System.out.println(be.getMessage());
+				    break;                                    
+                                } 
+                                
 				try {
-					conta.debitar(scanner.nextDouble());
-					System.out.println("Operacao bem sucedida.");
+					conta.debitar(entrada);
+					System.out.println("\nOperacao bem sucedida.\n");
 				}
 				catch (BancoAppException e) {
 					break;
