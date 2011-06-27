@@ -52,7 +52,8 @@ public class Exercicio03 {
         System.out.println("\n" + resultadoA);
 
         if (resultadoA.doubleValue() <= 1499.15) {
-        	resultadoA. = resultadoA.doubleValue() - 112.43;
+        	resultadoA = new BigDecimal(resultadoA.doubleValue() - 112.43);
+                System.out.println("res: "+ resultadoA);
         }
 
     }
