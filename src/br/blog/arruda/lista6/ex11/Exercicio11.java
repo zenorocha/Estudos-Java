@@ -10,16 +10,12 @@ public class Exercicio11 {
         Produto p = new Produto("nome ", 1, new Double(1 * 100));
         Class c = p.getClass();
 
-        Method []methods = c.getDeclaredMethods();
         for(Field field : c.getDeclaredFields()){
             System.out.println(field.getName());            
         }
         for(Method method : c.getDeclaredMethods()){
             System.out.println(method.getName());            
         }
-
-
-
 
     }
 }
