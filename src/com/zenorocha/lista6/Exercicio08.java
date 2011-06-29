@@ -8,28 +8,25 @@
  *
  * --------------------------------------------------------------------------------------------
  *
- * Exercício 6
+ * Exercício 8
  *
- *	Seja uma classe Produto com atributos nome (string), código (int) e preço (double), faça
- *      um programa que instancie alguns produtos (ex: 3 produtos), armazenando suas
- *      referências em um array. Em seguida, armazene os dados desses três produtos em um
- *      arquivo via serialização binária.
+ *	Seja a mesma classe Produto do exercício 6, faça um programa que instancie alguns
+ *      produtos (ex: 3 produtos), armazenando suas referências em um array. Em seguida,
+ *      armazene os dados desses três produtos em um arquivo via serialização em arquivo XML.
  *
  */
 
 package com.zenorocha.lista6;
 
-import com.zenorocha.lista6.Produto;
-import java.io.BufferedOutputStream;
+import java.beans.XMLEncoder;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
-public class Exercicio06 {
+public class Exercicio08 {
 
-    public static void main (String args[]) {
-        
+    public static void main(String args[]) {
+
         Produto p1 = new Produto("Produto - 1", 1, 10.5);
         Produto p2 = new Produto("Produto - 2", 2, 13.2);
         Produto p3 = new Produto("Produto - 3", 3, 15);
@@ -42,10 +39,10 @@ public class Exercicio06 {
 
         try {
 
-            ObjectOutputStream output = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream("produto.dat")));
+            XMLEncoder xml = new XMLEncoder(new FileOutputStream("produto.xml"));
 
-            output.writeObject(lista);
-            output.close();
+            xml.writeObject(lista);
+            xml.close();
 
         }
         catch (IOException ex) {
@@ -53,9 +50,6 @@ public class Exercicio06 {
         }
 
 
-
-
     }
 
 }
-
