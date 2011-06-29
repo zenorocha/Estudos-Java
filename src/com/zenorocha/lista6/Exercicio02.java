@@ -40,8 +40,7 @@ import java.util.Scanner;
 public class Exercicio02 {
 
     public static void main(String args[]) {
-//wtf?! string?!
-//        Scanner input = new Scanner("System.in");
+        
         Scanner input = new Scanner(System.in);
         Boolean continua = true;
 
@@ -56,8 +55,7 @@ public class Exercicio02 {
                 texto = input.nextLine();
 
                 if (!texto.equals("")) {
-                    
-                    //writer.println(texto);
+                    writer.println(texto);
                 }
                 else {
                     continua = false;

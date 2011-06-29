@@ -1,0 +1,7 @@
+Exercicio7.FormConversorTemperatura$3
+Exercicio7.FormConversorTemperatura$4
+Exercicio7.FormConversorTemperatura
+Exercicio7.FormConversorTemperatura$5
+Exercicio7.FormConversorTemperatura$6
+Exercicio7.FormConversorTemperatura$1
+Exercicio7.FormConversorTemperatura$2

@@ -1,0 +1,1 @@
+Exercicio7.ConversorTemperatura
