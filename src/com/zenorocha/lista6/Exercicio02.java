@@ -40,19 +40,20 @@ import java.util.Scanner;
 public class Exercicio02 {
 
     public static void main(String args[]) {
-
-        Scanner input = new Scanner("System.in");
+//wtf?! string?!
+//        Scanner input = new Scanner("System.in");
+        Scanner input = new Scanner(System.in);
         Boolean continua = true;
 
         try {
 
-            PrintWriter writer = new PrintWriter(new FileWriter("/home/zeno/exemplo.txt"));
+            PrintWriter writer = new PrintWriter(new FileWriter("exemplo.txt"));
             String texto = "";
 
             while (continua) {
 
                 System.out.print("Entre o texto: ");
-                texto = input.next();
+                texto = input.nextLine();
 
                 if (!texto.equals("")) {
                     
